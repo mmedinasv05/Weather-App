@@ -1,5 +1,4 @@
 /******************  QUERY  ******************/
-
 /*sm Ok*/
 @media screen and (max-width: 540px){
     .section-menu{
@@ -74,9 +73,8 @@
         display: block;/**/
         text-align: center;/**/
     }
-    
     .section-menu-item ul li a{
-        font-size: 25px;
+        font-size: 40px;
         margin: 30px 0;
         display: block;
     }
@@ -88,9 +86,10 @@
 
     /*Welcome Ok*/
     .section-main{
+        height: auto;
         justify-content: center;
         flex-direction: column-reverse;
-        padding: 0 0 25px 0;
+        padding: 40px 0;
     }
     .box-text{
         width: 100%;
@@ -100,15 +99,15 @@
         margin: 20px 0 0 0;
     }
     .image-phone-welcome{
-        height: 60%;
+        height: 50vh;
         margin: 0 0 15px 0;
     }
     .circle-one{
-        left: 5%;
+        left: 15%;
         top: 30%;
     }
     .circle-two{
-        right: 5%;
+        right: 15%;
         top: 30%;
     }
     br{
@@ -126,31 +125,43 @@
         width: 90%;
         height: auto;
         display: block;
-        padding: 20px 10px;
-        margin: 10px 0;
+        padding: 20px 20px;
+        margin: 5px 0;
         text-align: center;
     }
     .box-service h4{
         font-size: 25px;
         margin: 20px 0;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
     .box-service p{
-        font-size: 14px;
+        font-size: var(--text-sm);
+        line-height: 24px;
     }
 
     /*Screenshot Ok*/
+    .section-screenshot{
+        flex-direction: column-reverse;
+    }
     .image-screenshot{
         width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+    .image-screenshot img{
         height: 50vh;
     }
     .text-screenshot{
         width: 100%;
-        height: 45vh;
+        height: auto;
         align-items: center;
-        padding: 0 40px;
+        padding: 20px 40px;
     }
     .text-screenshot p{
         text-align: center;
+        font-size: var(--text-sm);
+        line-height: 24px;
     }
     .circle-three,
     .circle-six,
@@ -163,7 +174,6 @@
         right: 20%;
     }
 
-
     /*Testimonials Ok*/
     .section-testimonials{
         height: auto;
@@ -172,39 +182,51 @@
     }
     .box-testimonial{
         width: 90%;
-        height: 20vh;
+        height: auto;
         align-items: center;
-        margin: 20px 0;
+        margin: 10px 0;
     }
     .box-testimonial h3{
         text-align: center;
+        line-height: 30px;
     }
     .box-testimonial p{
         margin: 20px 0 0 0;
+        font-size: var(--text-sm);
     }
 
     /*Download Ok*/
     .text-download{
         width: 100%;
-        height: 35vh;
+        height: auto;
         align-items: center;
-        padding: 0 30px;
+        padding: 40px 30px;
         text-align: center;
     }
+    .text-download p{
+        font-size: var(--text-sm);
+        line-height: 24px;
+    }
     .box-btn-app{
-        margin: 20px 0 0 0;
+        margin: 40px 0 0 0;
+        display: block;
     }
     .image-download{
         width: 100%;
-        height: 30vh;
+        height: 27vh;
+        padding: 20px 0;
     }
+    .image-download img{
+        width: 90%;
+    }
+
     /*Footer Ok*/
     .section-footer{
         width: 100%;
-        height: 15vh;/**/
-        justify-content: center;/**/
-        flex-direction: column;/**/
-        padding: 0;/**/
+        height: 15vh;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
     }
     .center-down{
         justify-content: flex-end;
@@ -213,17 +235,14 @@
         font-size: 25px;
         margin: 0 0 15px 0;
     }
-
     .box-social-media-footer a{
         margin: 0 15px;
-        font-size: 20px;
+        font-size: var(--text-sm);
     }
-
     .section-footer p{
-        font-size: 16px;/**/
+        font-size: var(--text-sm);
     }
 }
-
 
 /*md Ok*/
 @media (min-width: 541px) and (max-width: 720px){
@@ -296,14 +315,14 @@
         transform: translate(0,0);
     }
     .section-menu-item ul{
-        display: block;/**/
-        text-align: center;/**/
+        display: block;
+        text-align: center;
     }
     
     .section-menu-item ul li a{
-        font-size: 25px;/**/
-        margin: 30px 0;/**/
-        display: block;/**/
+        font-size: 25px;
+        margin: 30px 0;
+        display: block;
     }
 
     .section-social-media a{
@@ -315,14 +334,15 @@
     .section-main{
         justify-content: center;
         flex-direction: column-reverse;
-        padding: 0 40px 25px 40px;
+        padding: 0 70px;
     }
     .box-text{
         width: 100%;
         text-align: center;
+        margin: 20px 0 0 0;
     }
     .box-option-welcome{
-        margin: 20px 0 0 0;
+        margin: 30px 0 0 0;
     }
     .box-option-welcome a{
         font-size: 18px;
@@ -331,13 +351,18 @@
         height: 60%;
         margin: 0 0 15px 0;
     }
+    .circle-one,
+    .circle-two{
+        width: 90px;
+        height: 90px;
+    }
     .circle-one{
-        left: 10%;
-        top: 30%;
+        left: 20%;
+        top: 35%;
     }
     .circle-two{
-        right: 10%;
-        top: 30%;
+        right: 20%;
+        top: 35%;
     }
     br{
         display: none;
@@ -351,7 +376,7 @@
         padding: 20px 0;
     }
     .box-service{
-        width: 90%;
+        width: 80%;
         height: auto;
         display: block;
         padding: 20px 30px;
@@ -359,36 +384,46 @@
         text-align: center;
     }
     .box-service h4{
-        font-size: 25px;
+        font-size: 27px;
         margin: 20px 0;
     }
     .box-service p{
-        font-size: 14px;
+        font-size: var(--text-sm);
+        line-height: 26px;
     }
 
     /*Screenshot Ok*/
+    .section-screenshot{
+        flex-direction: column-reverse;
+    }
     .image-screenshot{
         width: 100%;
+        height: auto;
+        padding: 15px 0;
+    }
+    .image-screenshot img{
         height: 40vh;
     }
     .text-screenshot{
         width: 100%;
-        height: 40vh;
+        height: auto;
         align-items: center;
-        padding: 0 40px;
+        padding: 30px 46px;
     }
     .text-screenshot p{
         text-align: center;
+        font-size: var(--text-sm);
+        line-height: 26px;
     }
     .circle-three,
     .circle-six,
     .circle-eight{
-        left: 30%;
+        left: 27%;
     }
     .circle-four,
     .circle-five,
     .circle-seven{
-        right: 30%;
+        right: 27%;
     }
 
     /*Testimonials Ok*/
@@ -398,32 +433,41 @@
         padding: 20px 0;
     }
     .box-testimonial{
-        width: 90%;
-        height: 20vh;
+        width: 80%;
+        height: auto;
         align-items: center;
         margin: 20px 0;
     }
     .box-testimonial h3{
         text-align: center;
+        line-height: 32px;
     }
     .box-testimonial p{
         margin: 20px 0 0 0;
+        font-size: var(--text-sm);
     }
 
     /*Download Ok*/
     .text-download{
         width: 100%;
-        height: 35vh;
+        height: auto;
         align-items: center;
-        padding: 0 30px;
+        padding: 50px 30px;
         text-align: center;
+    }
+    .text-download p{
+        font-size: var(--text-sm);
+        line-height: 26px;
     }
     .box-btn-app{
         margin: 20px 0 0 0;
     }
     .image-download{
         width: 100%;
-        height: 30vh;
+        height: 25vh;
+    }
+    .image-download img{
+        width: 80%;
     }
 
     /*Footer Ok*/
@@ -443,18 +487,12 @@
     }
     .box-social-media-footer a{
         margin: 0 15px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .section-footer p{
-        font-size: 16px;
+        font-size: var(--text-sm);
     }
 }
-
-
-
-
-
-
 
 /*lg*/
 @media (min-width: 721px) and (max-width: 1000px){
@@ -546,7 +584,7 @@
     .section-main{
         justify-content: center;
         flex-direction: column-reverse;
-        padding: 0 40px 25px 40px;
+        padding: 0 100px;
     }
     .box-text{
         width: 100%;
@@ -556,18 +594,24 @@
         margin: 20px 0 0 0;
     }
     .box-option-welcome a{
-        font-size: 18px;
+        font-size: 20px;
+        padding: 12px 22px;
     }
     .image-phone-welcome{
         height: 60%;
         margin: 0 0 15px 0;
     }
+    .circle-one,
+    .circle-two{
+        width: 100px;
+        height: 100px;
+    }
     .circle-one{
-        left: 20%;
+        left: 27%;
         top: 30%;
     }
     .circle-two{
-        right: 20%;
+        right: 27%;
         top: 30%;
     }
     br{
@@ -577,15 +621,14 @@
     /*Services Ok*/
     .section-services{
         height: auto;
-        justify-content: center;
         flex-wrap: wrap;
-        padding: 20px 0;
+        padding: 20px 10px;
     }
     .box-service{
-        width: 50%;
+        width: 48%;
         height: auto;
         display: block;
-        padding: 20px 30px;
+        padding: 20px 10px;
         margin: 10px 0;
         text-align: center;
     }
@@ -594,21 +637,33 @@
         margin: 20px 0;
     }
     .box-service p{
-        font-size: 14px;
+        font-size: var(--text-sm);
+        line-height: 24px;
+        line-height: 26px;
     }
 
     /*Screenshot Ok*/
+    .section-screenshot{
+       flex-direction: column-reverse;
+    }
     .image-screenshot{
         width: 100%;
+        height: auto;
+        padding: 25px 0;
+    }
+    .image-screenshot img{
         height: 40vh;
     }
     .text-screenshot{
         width: 100%;
-        height: 30vh;
+        height: auto;
         align-items: center;
+        padding: 25px 100px;
     }
     .text-screenshot p{
         text-align: center;
+        font-size: var(--text-sm);
+        line-height: 26px;
     }
     .circle-three,
     .circle-six,
@@ -625,32 +680,40 @@
     /*Testimonials Ok*/
     .section-testimonials{
         height: auto;
-        justify-content: center;
         padding: 20px 0;
     }
     .box-testimonial{
-        width: 50%;
-        height: 20vh;
+        width: 48%;
+        height: auto;
         align-items: center;
         margin: 20px 0;
     }
     .box-testimonial h3{
         text-align: center;
+        line-height: 33px;
     }
     .box-testimonial p{
         margin: 20px 0 0 0;
+        font-size: var(--text-sm);
     }
 
     /*Download Ok*/
     .text-download{
         width: 100%;
-        height: 35vh;
+        height: auto;
         align-items: center;
-        padding: 0 30px;
+        padding: 50px 100px;
         text-align: center;
     }
+    .text-download h3{
+        font-size: 35px;
+    }
+    .text-download p{
+        font-size: var(--text-sm);
+        line-height: 26px;
+    }
     .box-btn-app{
-        margin: 20px 0 0 0;
+        margin: 40px 0 0 0;
     }
     .image-download{
         width: 100%;
@@ -672,7 +735,7 @@
         justify-content: flex-end;
     }
     .section-footer a{
-        font-size: 25px;
+        font-size: 30px;
         margin: 0 0 15px 0;
     }
     .box-social-media-footer a{
@@ -680,16 +743,12 @@
         font-size: 20px;
     }
     .section-footer p{
-        font-size: 18px;
+        font-size: var(--text-sm);
     }
 }
 
-
-
-
-
 /*xl* Ok*/
-@media screen and (min-width:1300px){
+@media screen and (min-width:1200px){
     .section-menu{
         padding: 0 40px;
     }

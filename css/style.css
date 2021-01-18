@@ -91,7 +91,7 @@
 }
 .box-text h1{
     font-family: var(--font-title-main);
-    font-size: var(--size-menu-main);
+    font-size: var(--size-title-main);
     margin: 0;
     letter-spacing: 2px;
     color: var(--color-white);
