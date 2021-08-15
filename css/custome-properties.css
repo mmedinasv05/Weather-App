@@ -30,11 +30,11 @@ a{
     --font-paragraph: 'Montserrat', sans-serif;
 
 
-    --height-menu: 13vh;
-    --size-logo: 18px;
-    --size-menu: 14px;
-    --size-title-main: 60px;
-    --size-title-alt: 27px
+    --height-menu: 14vh;
+    --size-logo: 20px;
+    --size-menu: 15px;
+    --size-title-main: 70px;
+    --size-title-alt: 32px
 }
 
 body::-webkit-scrollbar{
@@ -46,9 +46,14 @@ body::-webkit-scrollbar-thumb{
 html{
     scroll-behavior: smooth;
 }
+#feaures,
+#review,
+#download{
+    scroll-margin-top: 6ex;
+}
 .space-white{
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     background-color: var(--color-white);
 }
 .center{
@@ -59,29 +64,40 @@ html{
 /*Section Title*/
 .section-title{
     width: 100%;
-    height: 23vh;
+    height: auto;
     background-color: var(--color-white);
     flex-direction: column;
+    padding: 50px 0;
 }
 .section-title h2{
     font-family: var(--font-title-main);
     font-size: var(--size-title-alt);
     color:  var(--color-blue);
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 .section-title p{
-    margin: 8px 0 0 0;
+    margin: 15px 0 0 0;
     font-family: var(--font-paragraph);
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 /******************  QUERY  ******************/
 
-/*sm*/
-@media screen and (max-width: 540px){
+/**********  Small **********/
+@media screen and (max-width: 480px){
+    #feaures,
+    #review,
+    #download{
+        scroll-margin-top: 11ex;
+    }
     :root{
         --size-logo: 20px;
         --size-title-main: 35px;
         --size-title-alt: 30px;
         --text-sm: 16px;
+        --height-menu: 13vh;
     }
     .section-title{
         height: 20vh;
@@ -96,17 +112,17 @@ html{
     }
 }
 
-/*md*/
-@media (min-width: 541px) and (max-width: 720px){
+/**********  Medium **********/
+@media screen and (min-width: 480px) and (max-width: 800px){
     :root{
-        --size-logo: 22px;
-        --size-title-main: 45px;
-
+        --size-logo: 30px !important;
+        --size-title-main: 60px !important;
+        --height-menu: 10vh !important;
         --size-title-alt: 35px;
         --text-sm: 18px;
     }
     .section-title{
-        height: 15vh;
+        height: 15vh !important;
         letter-spacing: 1px;
         padding: 0 15px;
         text-align: center;
@@ -118,13 +134,24 @@ html{
     .space-white{
         width: 100%;
     }
+
+    #feaures,
+    #review,
+    #download{
+        scroll-margin-top: 10ex;
+    }
 }
 
-/*lg*/
-@media (min-width: 721px) and (max-width: 1000px){
+/**********  Large **********/
+@media (min-width: 800px) and (max-width: 1024px){
+    #feaures,
+    #review,
+    #download{
+        scroll-margin-top: 10ex;
+    }
     :root{
         --size-logo: 25px;
-        --size-title-main: 45px;
+        --size-title-main: 50px !important;
 
         --size-title-alt: 40px;
         --text-sm: 18px;
@@ -139,15 +166,5 @@ html{
     }
     .space-white{
         height: 1vh;
-    }
-}
-
-/*xl*/
-@media screen and (min-width:1300px){
-    :root{
-        --size-logo: 20px;
-        --size-menu: 15px;
-        --size-menu-main: 70px;
-        --size-title-alt: 27px
     }
 }

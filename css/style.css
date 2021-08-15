@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 50px;
     position: fixed;
     transition: background-color 0.3s ease-in-out;
     top: 0;
@@ -28,6 +28,8 @@
 .sticky span:nth-child(2){
     color: #648CFF;
 }
+
+
 /**/
 .item-logo{
     font-family: var(--font-logo);
@@ -57,8 +59,8 @@
 }
 .section-social-media a{
     font-family: var(--font-menu);
-    font-size: var(--size-menu);
-    margin: 0 10px;
+    font-size: 18px;
+    margin: 0 15px;
     color: var(--color-gray);
 }
 .panel-btn{
@@ -82,7 +84,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 140px 0 30px;
+    padding: 0 200px 0 50px;
     position: relative;
 }
 .box-text{
@@ -106,8 +108,9 @@
     font-family: var(--font-menu);
     color: var(--color-white);
     padding: 10px 20px;
-    margin: 0 15px 0 0;
+    margin: 0 10px 0 0;
     border-radius: 5px;
+    letter-spacing: 2px;
 }
 .box-option-welcome a:nth-child(1){
     background-color: var(--color-orange);
@@ -121,8 +124,8 @@
 }
 .circle-one,
 .circle-two{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -134,45 +137,48 @@
 }
 .circle-one{
     background-color: var(--color-orange);
-    right: 38%;
+    right: 32%;
 }
 .circle-two{
     background-color: var(--color-blue);
-    right: 3%;
+    right: 5%;
 }
+
+
+
 
 
 /*Services*/
 .section-services{
     width: 100%;
-    height: 42vh;
-    background-color: var(--color-white);;
+    height: auto;
+    background-color: var(--color-white);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
+    padding: 30px 0;
 }
 .box-service{
     width: 30%;
-    height: 70%;
+    height: auto;
     background-color: var(--color-white);
     display: flex;
-    padding: 25px 15px 10px 5px;
+    padding: 40px 30px;
 }
 .box-service h4{
-    font-size: 22px;
+    font-size: 25px;
     font-family: var(--font-title-main);
     margin: 0 0 8px 0;
 }
 .box-service p{
     font-family: var(--font-paragraph);
     color: var(--color-gray-dark);
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 22px;
 }
 .box-service .far,
 .box-service .fas{
-    font-size: 50px;
+    font-size: 40px;
     margin: 0 20px 0 0;
     color: var(--color-orange);
 }
@@ -190,12 +196,12 @@
 }
 .image-screenshot{
     width: 45%;
-    height: 90vh;
+    height: 80vh;
     background-color: var(--color-white);
     position: relative
 }
 .image-screenshot img{
-    height: 90%;
+    height: 80%;
 }
 .text-screenshot{
     width: 55%;
@@ -205,11 +211,11 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 60px 0 40px;
+    padding: 0 80px 0 60px;
 }
 .text-screenshot h4{
     font-family: var(--font-title-main);
-    font-size: 35px;
+    font-size: 30px;
     color:  var(--color-black);
     margin: 30px 0 0 0;
 }
@@ -217,7 +223,7 @@
     margin: 20px 0 0 0;
     font-family: var(--font-paragraph);
     color: var(--color-gray-dark);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 .circle-three,
@@ -239,56 +245,60 @@
     font-size: 11px;
 }
 .circle-three{
-    left: 15%;
+    left: 28%;
     bottom: 30%;
     background-color: var(--color-blue);
 }
 .circle-four{
-    right: 15%;
+    right: 28%;
     top: 30%;
     background-color: var(--color-yellow);
 }
 .circle-five{
-    right: 15%;
+    right:28%;
     top: 30%;
     background-color: var(--color-orange-alt);
 }
 .circle-six{
-    left: 15%;
+    left: 28%;
     bottom: 30%;
     background-color: var(--color-orange);
 }
 .circle-seven{
-    right: 15%;
+    right: 28%;
     top: 30%;
     background-color: #B8FAEE;
 }
 .circle-eight{
-    left: 15%;
+    left: 28%;
     bottom: 30%;
     background-color: #7693C8;
 }
 
 
+
+
 /*Testimonials*/
 .section-testimonials{
     width: 100%;
-    height: 75vh;
-    background-color: var(--color-white);;
+    height: auto;
+    background-color: var(--color-white);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 50px 50px 0 50px;
 }
 .box-testimonial{
-    width: 45%;
-    height: 45%;
+    width: 40%;
+    height: auto;
     background-color: var(--color-white);
     padding: 25px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    margin: 0 0 50px 0;
 }
 .box-testimonial h3{
     font-family: var(--font-title-main);
@@ -299,7 +309,8 @@
     font-family: var(--font-paragraph);
     font-size: 14px;
     color:  var(--color-black);
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
+    font-weight: bold;
 }
 
 
@@ -313,14 +324,14 @@
     flex-wrap: wrap;
 }
 .text-download{
-    width: 45%;
+    width: 50%;
     height: 65vh;
-    background-color: var(--color-blue);;
+    background-color: var(--color-blue);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 80px 0 20px;
+    padding: 0 120px 0 40px;
 }
 .text-download h3{
     font-family: var(--font-title-main);
@@ -329,27 +340,27 @@
 }
 .text-download p{
     font-family: var(--font-paragraph);
-    font-size: 14px;
-    color:  var(--color-white);
+    font-size: 15px;
+    color: var(--color-white);
     margin: 20px 0 0 0;
-    line-height: 20px;
+    line-height: 24px;
 }
 .box-btn-app{
     width: auto;
     height: auto;
 }
 .box-btn-app{
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
     display: block;
 }
 .image-download{
-    width: 55%;
+    width: 50%;
     height: 65vh;
-    background-color:var(--color-blue);
+    background-color: var(--color-blue);
     position: relative;
 }
 .image-download img{
-    width: 95%;
+    width: 75%;
     position: absolute;
     bottom: 0;
 }
@@ -363,12 +374,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 40px;
 }
 .section-footer a{
     color: var(--color-white);
     font-family: var(--font-title-main);
-    font-size: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 .section-footer span:nth-child(1){
     color: var(--color-orange);
@@ -377,12 +389,16 @@
     color: #648CFF;
 }
 .box-social-media-footer a{
-    margin: 0 10px;
+    margin: 0 15px;
     color: var(--color-gray);
-    font-size: 17px;
+    font-size: 20px;
 }
 .section-footer p{
     font-family: var(--font-menu);
     color: var(--color-gray);
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.section-footer .fa-heart{
+    color: red;
 }
